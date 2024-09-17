@@ -1,19 +1,23 @@
+// src/index.tsx
+
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { RouterProvider } from 'react-router-dom';
+import Root from './Root';
 
-const root = ReactDOM.createRoot(
-  document.getElementById('root') as HTMLElement
-);
+// TypeScript ensures that `document.getElementById` returns an HTMLElement
+const rootElement = document.getElementById('root') as HTMLElement;
+
+const root = ReactDOM.createRoot(rootElement);
+
+// Rendering the RouterProvider with the Root router setup
 root.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={Root} />
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+// Measure performance
 reportWebVitals();
