@@ -12,7 +12,7 @@ const ShuvankorVai: React.FC = () => {
                     <h2 className="text-xl">Shuvankor Hazra!</h2>
                     <p className='text-lg'>shuvo.s.ovuhs@gmail.com</p>
                     <p className='text-lg'>Khulna, Bangladesh</p>
-
+                    <p className='text-lg'>01741836653</p>
                 </div>
             </div>
         </div>
